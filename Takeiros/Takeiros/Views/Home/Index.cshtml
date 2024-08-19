@@ -1,8 +1,65 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Takeiros Mex-Food";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Takeiros Mex-Food</h1>
+</div>
+
+<div class="container">
+    <!-- Specials Section -->
+    <div class="box">
+        <h2>Specials</h2>
+        <p>Add in a carousel maybe to flip through the specials.</p>
+    </div>
+
+    <!-- Main Info Section: Address, Phone, Hours, and Map -->
+    <div class="box">
+        <div class="row">
+            <!-- Left Column: Address, Phone, and Hours -->
+            <div class="col-md-6">
+                <div>
+                    <h3>Hours:</h3>
+                    @* Update with real hours!! *@
+                    <p>
+                        Sunday: 9:00 AM - 5:00 PM<br>
+                        Monday: 8:00 AM - 8:00 PM<br>
+                        Tuesday: 8:00 AM - 8:00 PM<br>
+                        Wednesday: 8:00 AM - 8:00 PM<br>
+                        Thursday: 8:00 AM - 8:00 PM<br>
+                        Friday: 8:00 AM - 10:00 PM<br>
+                        Saturday: 8:00 AM - 10:00 PM<br>
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Address:</h3>
+                    @* Update with real address!! *@
+                    <p>
+                        123 Main Street<br>
+                        Anytown, USA<br>
+                        12345
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Phone Number:</h3>
+                    @* Update with real phone number!! *@
+                    <p>
+                        @* This is a link for mobile site to allow users to click phone number to call *@
+                        <a href="tel:+1234567890">(123) 456-7890</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Column: Map -->
+            <div class="col-md-6">
+                <h3>Map:</h3>
+                <div class="map">
+                    <!-- Placeholder for map integration (Google Maps, etc.) -->
+                    Add map to show location here.
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

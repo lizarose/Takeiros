@@ -28,3 +28,4 @@ C:\Users\lizar\OneDrive\Desktop\Takeiros\Takeiros\Takeiros\obj\Debug\net8.0\refi
 C:\Users\lizar\OneDrive\Desktop\Takeiros\Takeiros\Takeiros\obj\Debug\net8.0\Takeiros.pdb
 C:\Users\lizar\OneDrive\Desktop\Takeiros\Takeiros\Takeiros\obj\Debug\net8.0\Takeiros.genruntimeconfig.cache
 C:\Users\lizar\OneDrive\Desktop\Takeiros\Takeiros\Takeiros\obj\Debug\net8.0\ref\Takeiros.dll
+C:\Users\lizar\OneDrive\Desktop\Takeiros\Takeiros\Takeiros\obj\Debug\net8.0\Takeiros.sourcelink.json
