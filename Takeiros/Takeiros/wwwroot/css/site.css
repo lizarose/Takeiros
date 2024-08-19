@@ -32,3 +32,14 @@ body {
   height: 85%; /* Adjust height as needed */
   background-color: #eee; /* Placeholder background color for the map */
 }
+.phoneNumber {
+  text-decoration: none;
+}
+
+.menuButtons {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
