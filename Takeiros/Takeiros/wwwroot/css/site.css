@@ -28,10 +28,12 @@ body {
   border-radius: 8px;
   background-color: #f9f9f9;
 }
+
 .map {
   height: 85%; /* Adjust height as needed */
   background-color: #eee; /* Placeholder background color for the map */
 }
+
 .phoneNumber {
   text-decoration: none;
 }
@@ -42,4 +44,36 @@ body {
 
 footer {
   text-align: center;
+}
+
+.display-4 {
+  text-align: center;
+}
+
+.menu-container {
+  text-align: center; 
+}
+
+.menu-sub-header {
+  display: flex; 
+  justify-content: center; 
+  gap: 10px; /* Space between the menu items */
+  margin: 20px 0; /* Optional: spacing above and below the menu links */
+}
+
+.menu-link {
+  text-decoration: none; 
+  padding: 10px 20px; /* Space inside each link */
+  border: 2px solid transparent; /* Border for links */
+  border-radius: 5px;
+  color: #000; /* Default text color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions for hover effects */
+}
+
+.menu-link:hover,
+.menu-link.active {
+  background-color: #007bff; /* Background color for hover/active states */
+  color: #fff; /* Text color for hover/active states */
+  border: 2px solid #007bff; /* Border color for hover/active states */
+  border-radius: 5px; /* Optional: rounded corners */
 }

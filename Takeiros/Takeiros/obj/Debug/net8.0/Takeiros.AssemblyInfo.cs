@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Takeiros")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0b9f68ea839f2235ce642a2308b9e442dbb0a27")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c44ecd4b8ef44a505f47d07bf15943679ee74f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Takeiros")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Takeiros")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
