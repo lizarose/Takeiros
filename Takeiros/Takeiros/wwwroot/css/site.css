@@ -77,3 +77,61 @@ footer {
   border: 2px solid #007bff; /* Border color for hover/active states */
   border-radius: 5px; /* Optional: rounded corners */
 }
+
+.menu-section {
+  display: none; /* Hide all sections initially */
+  margin: 20px 0;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders between cells are merged */
+  margin: 10px 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.menu-table th, .menu-table td {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+  text-align: left;
+  word-wrap: break-word; /* Ensures long words or URLs break and wrap */
+}
+
+.menu-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.menu-sub-header {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center the links horizontally */
+  gap: 10px; /* Space between the links */
+  margin: 20px 0;
+}
+
+.menu-link {
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px 20px; /* Space inside the link */
+  border: 2px solid transparent; /* Border for links */
+  color: #000; /* Default text color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions for hover effects */
+}
+
+.menu-link:hover {
+  background-color: #007bff; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+  border: 2px solid #007bff; /* Border color on hover */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+.box-1 {
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}

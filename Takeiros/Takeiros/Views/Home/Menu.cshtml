@@ -10,4 +10,132 @@
         <a href="#desserts" class="menu-link">Desserts</a>
         <a href="#drinks" class="menu-link">Drinks</a>
     </div>
+
+    <div>
+        <p>Welcome to Takeiros Mex-Food. Here is our menu:</p>
+    </div>
+    <hr style="border: 0; height: 2px; background: #333; width: 80%; margin: 20px auto;">
+
+
+@* Appetizers Menu Section *@
+    <div id="appetizers" class="menu-section">
+        <div class="box-1">
+        <h3>Appetizers</h3>
+        <table class="menu-table">
+            @* Nacho Section *@
+            <tr>
+                <td colspan="3" style="font-weight: bold; text-decoration: underline;">Nachos</td>
+            </tr>
+            <tr>
+                <td>Basic Nachos</td>
+                <td>$8.99</td>
+                <td>Crispy tortilla chips topped with melted cheese, jalapeños, and your choice of beef or chicken.</td>
+            </tr>
+            <tr>
+                <td>Quesadilla</td>
+                <td>$7.99</td>
+                <td>Flour tortilla filled with melted cheese and your choice of chicken, beef, or vegetables.</td>
+            </tr>
+            <tr>
+                <td>Chips and Salsa</td>
+                <td>$4.99</td>
+                <td>Freshly warm chips and fresh mild salsa.</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+
+@* Entrees Menu Section *@
+    <div id="entrees" class="menu-section">
+        <div class="box-1">
+        <h3>Entrees</h3>
+        <table class="menu-table">
+            @* Tacos Section *@
+            <tr>
+                <td colspan="3" style="font-weight: bold; text-decoration: underline;">Tacos</td>
+            </tr>
+            <tr>
+                <td>Tacos</td>
+                <td>$11.99</td>
+                <td>Three soft or crispy tacos filled with your choice of meat, topped with lettuce, cheese, and salsa.</td>
+            </tr>
+            @* Burritos Section *@
+            <tr>
+                <td colspan="3" style="font-weight: bold; text-decoration: underline;">Burritos</td>
+            </tr>
+            <tr>
+                <td>Burrito</td>
+                <td>$12.99</td>
+                <td>Large flour tortilla filled with rice, beans, cheese, and your choice of meat.</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+
+@* Desserts Menu Section *@
+    <div id="desserts" class="menu-section">
+        <div class="box-1">
+        <h3>Desserts</h3>
+        <table class="menu-table">
+            <tr>
+                <td>Churros</td>
+                <td>$4.99</td>
+                <td>Deep-fried dough pastries coated in cinnamon sugar.</td>
+            </tr>
+            <tr>
+                <td>Flan</td>
+                <td>$5.99</td>
+                <td>Caramel custard dessert with a smooth texture.</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+
+@* Drinks Menu Section *@
+    <div id="drinks" class="menu-section">
+        <div class="box-1">
+        <h3>Drinks</h3>
+        @* Alcoholic Drinks Section *@
+        <table class="menu-table">
+            <tr>
+                <td colspan="3" style="font-weight: bold; text-decoration: underline;">Alcoholic</td>
+            </tr>
+            <tr>
+                <td>Margarita</td>
+                <td>$7.99</td>
+                <td>Classic cocktail made with tequila, lime juice, and triple sec.</td>
+            </tr>
+            @* Non-Alcoholic Drinks Section *@
+            <tr>
+                <td colspan="3" style="font-weight: bold; text-decoration: underline;">Non-Alcoholic</td>
+            </tr>
+            <tr>
+                <td>Soda</td>
+                <td>$2.99</td>
+                <td>Choose from a variety of soft drinks.</td>
+            </tr>
+            <tr>
+                <td>Water</td>
+                <td>Free</td>
+            </tr>
+        </table>
+        </div>
+    </div>
 </div>
+
+<script>
+    document.querySelectorAll('.menu-link').forEach(link => {
+        link.addEventListener('click', function() {
+            const targetId = this.getAttribute('href').substring(1);
+            const sections = document.querySelectorAll('.menu-section');
+
+            sections.forEach(section => {
+                if (section.id === targetId) {
+                    section.style.display = 'block'; // Show the selected section
+                } else {
+                    section.style.display = 'none'; // Hide other sections
+                }
+            });
+        });
+    });
+</script>
