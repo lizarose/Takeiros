@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Footer.css'; 
 import smallTequilaLogo from '../../assets/smallTequilaLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
+    //This is used to highlight the current day of the week so customers can clearly see what day it is and see the hours highlighted
+    useEffect(() => {
+        // Map days to their corresponding IDs
+        const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+        
+        // Get the current day of the week
+        const currentDay = new Date().getDay(); // Returns a number (0 = Sunday, 1 = Monday, etc.)
+
+        // Select the element for the current day
+        const currentDayElement = document.getElementById(days[currentDay]);
+
+        // Add the highlight class
+        if (currentDayElement) {
+            currentDayElement.classList.add('highlight');
+        }
+    }, []);
+
     return (
         <div className="footer-container">
             <div className="footer-left">
@@ -12,16 +29,17 @@ function Footer() {
                     
                 {/* //TODO: Update with actual restaurant hours */}
                     <h4>Hours</h4>  
-                    <p>
-                        Sunday: 9:00 AM - 5:00 PM<br />
-                        Monday: 8:00 AM - 8:00 PM<br />
-                        Tuesday: 8:00 AM - 8:00 PM<br />
-                        Wednesday: 8:00 AM - 8:00 PM<br />
-                        Thursday: 8:00 AM - 8:00 PM<br />
-                        Friday: 8:00 AM - 10:00 PM<br />
-                        Saturday: 8:00 AM - 10:00 PM<br />
+                    <p id="hours">
+                        <span  id="sunday">Sunday: 9:00 AM - 5:00 PM</span><br />
+                        <span  id="monday">Monday: 8:00 AM - 8:00 PM</span><br />
+                        <span  id="tuesday">Tuesday: 8:00 AM - 8:00 PM</span><br />
+                        <span  id="wednesday">Wednesday: 8:00 AM - 8:00 PM</span><br />
+                        <span  id="thursday">Thursday: 8:00 AM - 8:00 PM</span><br />
+                        <span  id="friday">Friday: 8:00 AM - 10:00 PM</span><br />
+                        <span  id="saturday">Saturday: 8:00 AM - 10:00 PM</span>
                     </p>
                 </div>
+
                 {/* //TODO: Update with actual address */}
                 <div className="footer-section">
                     <h4>Address</h4>    
@@ -32,21 +50,18 @@ function Footer() {
                     </p>
 
                     {/* //TODO: Update with actual phone */}
-              
                     <h4>Phone</h4>      
                     <p>
-                        <a href="tel:+1234567890">(123) 456-7890</a>
+                        <a href="tel:+1234567890" className='phoneNumber'>(123) 456-7890</a>
                     </p>
-               
                 </div>
-
-                
             </div>
 
             {/* //TODO: Update with actual social media links */}
             <div className="footer-right">
                 <h4>Follow Us</h4>
-                <div className="social-links">      
+                <div className="social-links"> 
+                     {/* //TODO: Update with actual social media links */}
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faFacebook} style={{color: "#74C0FC",}} className='facebook-logo'/>
                     </a>
@@ -63,8 +78,6 @@ function Footer() {
                 </div>
             </div>
             
-
-            {/* //TODO: Update with Twilio email subscription link */}
             <div className="footer-bottom">     
                 <p>&copy; {new Date().getFullYear()} Takeiros Mex-Food</p>
             </div>

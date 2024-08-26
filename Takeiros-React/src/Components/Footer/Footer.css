@@ -1,3 +1,4 @@
+/* Entire Footer CSS */
 .footer-container {
     background-color: #333;
     color: white;
@@ -16,6 +17,7 @@
     left: 0;
 }
 
+/* Left Side CSS */
 .footer-left {
     flex: 1; 
     display: flex;
@@ -24,6 +26,7 @@
     margin-left: 100px;
 }
 
+/* Right Side CSS */
 .footer-right {
     text-align: center;
     flex: 1; 
@@ -31,27 +34,23 @@
    
 }
 
+/* Hours, Address, Phone Number Section */
 .footer-section{
     padding-left: 20px;
 }
+
+/* H4 Tags in Footer Section */
 .footer-section h4 {
     margin-bottom: 10px;
 }
 
+/* P Tags in Footer Section */
 .footer-section p {
     margin: 0;
     margin-bottom: 5px;
 }
 
-.footer-right .social-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-right .social-links a:hover {
-    text-decoration: underline;
-}
-
+/* Bottom Footer CSS */
 .footer-bottom {
     margin-top: 20px;
     width: 100%;
@@ -61,21 +60,14 @@
     box-sizing: border-box;
 }
 
-.footer-bottom a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-bottom a:hover {
-    text-decoration: underline;
-}
-
+/* Tequila's Logo in Footer Right Side */
 .footer-image {
     width: 150px; 
     height: auto;
     margin-top: 10px;
 }
 
+/* Facebook Logo on Footer Right Side */
 .facebook-logo {
     width: 30px; 
     height: auto;
@@ -83,7 +75,19 @@
     padding-right: 5px;
 }
 
+/* Instagram Logo on Footer Right Side */
 .instagram-logo {
     width: 30px;
     height: auto;
+}
+
+/* Highlights the Current Day in Hours Section */
+.highlight {
+    font-weight: bold;
+    color: #fd7608; /* Highlight color */
+}
+
+/* Phone Number CSS */
+.phoneNumber {
+    text-decoration: none;
 }
