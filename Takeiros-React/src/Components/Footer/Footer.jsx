@@ -1,5 +1,8 @@
 import React from 'react';
 import './Footer.css'; 
+import smallTequilaLogo from '../../assets/smallTequilaLogo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
     return (
@@ -29,12 +32,12 @@ function Footer() {
                     </p>
 
                     {/* //TODO: Update with actual phone */}
-                <div className="footer-section">
+              
                     <h4>Phone</h4>      
                     <p>
                         <a href="tel:+1234567890">(123) 456-7890</a>
                     </p>
-                </div>
+               
                 </div>
 
                 
@@ -44,13 +47,19 @@ function Footer() {
             <div className="footer-right">
                 <h4>Follow Us</h4>
                 <div className="social-links">      
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a><br />
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a><br />
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faFacebook} style={{color: "#74C0FC",}} className='facebook-logo'/>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faInstagram} style={{color: "#fd7608", margin: "0 10px"}} className='instagram-logo'/>
+                    </a>
                 </div>
 
                 <h4>Our Other Restaurants</h4>
                 <div className="social-links">
-                    <a href="https://tequilamex.com/" target="_blank" rel="noopener noreferrer">Tequila's</a>
+                    <a href="https://tequilamex.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={smallTequilaLogo} alt="Tequila Mex" className="footer-image" />
+                    </a>
                 </div>
             </div>
             
