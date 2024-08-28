@@ -1,3 +1,4 @@
+/* This is the entire Happy Hour Section - being used just to display a background color under the specials-section div */
 .happy-hour-container {
     padding: 40px 60px;
     margin: 40px auto;
@@ -9,6 +10,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* This div lays under the cards and the 'Happy Hour Specials' title sits in this section */
 .specials-section {
     background-color: rgba(238, 164, 17, 0.9); 
     padding: 20px;
@@ -17,6 +19,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* This is 'Happy Hour Specials' title css */
 .specials-section-title {
     margin-bottom: 20px;
     font-size: 50px;
@@ -25,6 +28,7 @@
     text-decoration: underline;
 }
 
+/* This is the cards - using this to add spacing around the cards*/
 .specials-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -32,7 +36,7 @@
     margin-top: 20px;
 }
 
-.card {
+/* .card {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -40,13 +44,15 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     background-color: #ffffffe9; 
-}
+} */
 
+/* This is a hover effect and adds shadowing */
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* This is for the images */
 .card-image {
     width: 150px;
     height: auto;
@@ -55,6 +61,7 @@
     object-fit: cover;
 }
 
+/* Name of Special */
 .special-name {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -62,14 +69,59 @@
     font-weight: bold;
 }
 
+/* Description of Special */
 .special-description {
     font-size: 1rem;
     margin-bottom: 10px;
     white-space: pre-line;
 }
 
+/* Price of Special */
 .special-price {
     font-size: 25px;
     font-weight: bold;
     color: #12ba4a;
+}
+
+/* Makes the Current Day Special Sparkle */
+@keyframes sparkle {
+    0% { box-shadow: 0 0 5px #D9534F; }
+    50% { box-shadow: 0 0 15px #D9534F; }
+    100% { box-shadow: 0 0 5px #D9534F; }
+}
+
+/* Current Day Card */
+.card.highlighted {
+    border: 2px solid #D9534F; 
+    background-color: #ffffffe9; 
+    animation: sparkle 1.5s infinite; 
+    position: relative;
+}
+
+/* Cards for non-current day */
+.card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    position: relative;
+}
+
+/* Badge that pops up on current day */
+.card-badge {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    background-color: #D9534F; 
+    color: #fff; 
+    border-radius: 50%; 
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2; 
+    animation: sparkle 1s infinite; 
 }
