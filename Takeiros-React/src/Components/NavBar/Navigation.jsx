@@ -7,7 +7,7 @@ const Navigation = () => {
         <Navbar light expand="md" className="fixed-top NavBar" id="navbar-margin">
             <Nav className="me-auto" navbar>
                 <NavbarBrand href="/" className="text-light">
-                    <p>Insert logo here</p>
+                    <p>Takeiros</p>
                 </NavbarBrand>
                 <NavItem>
                     <Link to='/' className="nav-link text-light">Home</Link>
