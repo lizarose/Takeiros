@@ -12,8 +12,8 @@
     width: 100%; 
     font-size: 0.75rem;
     box-sizing: border-box; 
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    /* bottom: 0; */
     left: 0;
 }
 
@@ -87,7 +87,7 @@
     color: #fd7608; /* Highlight color */
 }
 
-/* Phone Number CSS */
+/* Phone Number */
 .phoneNumber {
     text-decoration: none;
 }
