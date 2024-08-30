@@ -8,10 +8,7 @@ function LandingPage() {
       <div className="landing-page">
         
          {/* Import and Add Links Here */}
-         <Link to="/">
             <HappyHourSpecials />
-         </Link>
-         
       </div>
    )
 }
