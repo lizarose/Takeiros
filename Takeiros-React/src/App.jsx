@@ -9,10 +9,10 @@ function App() {
 
   return (
     <>
+    {/* Do Not Add To This. Put Link in LandingPage.jsx */}
       <Navigation />
-      <Outlet />
       <Header />
-      <HappyHourSpecials />
+      <Outlet />
       <Footer />
     </>
   )
