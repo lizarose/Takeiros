@@ -1,0 +1,69 @@
+/* .order-online-button, .view-menu-button{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+    text-decoration: none;
+    background-color: orange;
+    font-size: 20px;
+}
+
+.title {
+    padding-bottom: 15px;
+}
+
+.feature-photo {
+    background-color: rgb(247, 0, 255);
+    
+} */
+
+
+/* Header.css */
+
+/* Ensures the feature-photo div spans the full width of the screen */
+.feature-photo {
+    width: 100%;
+    height: 500px; /* You can adjust the height as needed */
+    /* background-image: url('path-to-your-background-image.jpg'); Replace with your image path */
+    background-size: cover; /* Ensures the background image covers the entire div */
+    background-position: center; /* Centers the background image */
+    position: relative; /* Allows absolute positioning of child elements */
+    display: flex; /* Enables flexbox layout for easier alignment */
+    flex-direction: column; /* Aligns child elements vertically */
+    justify-content: center; /* Centers the child elements vertically */
+    align-items: center; /* Centers the child elements horizontally */
+    background-color: rgb(98, 226, 156);
+   
+}
+
+/* Styling for the title */
+.title {
+    color: white; /* Ensures the text is readable on the background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow for better readability */
+    margin-bottom: 100px; /* Adds some space below the title */
+}
+
+/* Styling for the buttons container */
+.buttons {
+    display: flex; /* Aligns buttons horizontally */
+    gap: 20px; /* Adds space between buttons */
+}
+
+/* General button styling */
+.order-online-button, .view-menu-button {
+    background-color: #fe5900; /* Button color */
+    color: white; /* Text color */
+    padding: 20px 60px; /* Adjusts padding inside the buttons */
+    text-decoration: none; /* Removes underline from links */
+    border-radius: 10px; /* Rounds the corners of the buttons */
+    font-weight: bold; /* Makes the text bold */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect and shadow */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
+}
+
+/* Hover effect for buttons */
+.order-online-button:hover, .view-menu-button:hover {
+    background-color: #e64a19; /* Darker shade for hover effect */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Darker shadow on hover for more emphasis */
+
+}
