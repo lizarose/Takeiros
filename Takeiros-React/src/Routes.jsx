@@ -3,15 +3,17 @@ import App from './App'
 
 import Home from "./Components/Home/Home"
 import Menu from "./Components/Menu/Menu";
+import LandingPage from './LandingPage';
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
+
         children: [
             {
                 path: '/',
-                element: <div>Hello World</div>
+                element: <LandingPage />
             },
             {
                 path: '/menu',
