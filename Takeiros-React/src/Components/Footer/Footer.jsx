@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from "react-router-dom";
 import './Footer.css'; 
 import smallTequilaLogo from '../../assets/smallTequilaLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,7 +22,7 @@ function Footer() {
             currentDayElement.classList.add('highlight');
         }
     }, []);
-
+   
     return (
         <div className="footer-container">
             <div className="footer-left">
@@ -79,7 +80,7 @@ function Footer() {
             </div>
             
             <div className="footer-bottom">     
-                <p>&copy; {new Date().getFullYear()} Takeiros Mex-Food</p>
+                <p>&copy; {new Date().getFullYear()} Takeiros Mex-Food | <Link to='/privacy' className='privacy'>Privacy</Link></p>
             </div>
         </div>
     );
