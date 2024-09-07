@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import HappyHourSpecials from "./Components/Specials/Specials";
+import About from "./Components/AboutSection/About";
 
 
 function LandingPage() {
@@ -8,6 +9,7 @@ function LandingPage() {
       <div className="landing-page">
         
          {/* Import and Add Links Here */}
+            <About />
             <HappyHourSpecials />
       </div>
    )
